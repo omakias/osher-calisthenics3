@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#111827"/><stop offset="1" stop-color="#050505"/></linearGradient><filter id="blur"><feGaussianBlur stdDeviation="24"/></filter></defs>
+<rect width="640" height="360" rx="32" fill="url(#g)"/><circle cx="492" cy="80" r="78" fill="#39ff14" opacity=".18" filter="url(#blur)"/><rect x="30" y="250" width="580" height="34" rx="17" fill="#1b1f24"/>
+<g stroke="#e8e8e8" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" fill="none" transform="translate(75,70)">
+<circle cx="190" cy="45" r="24" fill="#d8b08a" stroke="none"/>
+<path d="M190 72 L250 122 L340 128"/><path d="M246 122 L190 170 L120 170"/><path d="M330 128 L445 165"/><path d="M120 170 L54 210"/><path d="M250 122 L280 190 L340 224"/><path d="M190 170 L214 240 L246 270"/>
+<path d="M238 118 C270 95 306 94 350 120" stroke="#39ff14" opacity=".75"/>
+</g>
+<text x="595" y="56" fill="#39ff14" font-family="Arial" font-size="25" font-weight="700" text-anchor="end">OSHER</text>
+<text x="595" y="90" fill="#fff" font-family="Arial" font-size="22" text-anchor="end">חתירה</text>
+</svg>
