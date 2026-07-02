@@ -1,0 +1,10 @@
+{
+  "name": "Osher Calisthenics",
+  "short_name": "Osher",
+  "description": "Own Your Strength",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#050607",
+  "theme_color": "#39ff14",
+  "orientation": "portrait"
+}
