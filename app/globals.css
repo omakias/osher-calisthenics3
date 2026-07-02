@@ -1,0 +1,52 @@
+:root {
+  --bg: #050806;
+  --panel: #0d120f;
+  --panel2: #121913;
+  --green: #39ff88;
+  --green2: #10b95c;
+  --text: #f2fff6;
+  --muted: #9fb4a6;
+  --line: rgba(57,255,136,.18);
+}
+* { box-sizing: border-box; }
+html, body { margin:0; background:var(--bg); color:var(--text); font-family: Arial, Helvetica, sans-serif; }
+button { font-family: inherit; }
+.app { min-height:100vh; max-width:430px; margin:0 auto; background: radial-gradient(circle at top, rgba(57,255,136,.16), transparent 34%), var(--bg); padding:20px 16px 86px; }
+.top { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:18px; }
+.logo { display:flex; flex-direction:column; gap:2px; }
+.logo strong { font-size:22px; letter-spacing:.5px; }
+.logo span { color:var(--green); font-size:13px; font-weight:700; }
+.avatar { width:46px; height:46px; border-radius:16px; background:linear-gradient(135deg,var(--green),#e8ffe9); color:#061006; display:grid; place-items:center; font-weight:900; }
+.hero { background:linear-gradient(180deg, rgba(57,255,136,.12), rgba(255,255,255,.03)); border:1px solid var(--line); border-radius:28px; padding:18px; box-shadow:0 18px 50px rgba(0,0,0,.35); }
+.hero h1 { margin:0 0 8px; font-size:26px; line-height:1.1; }
+.hero p { margin:0; color:var(--muted); line-height:1.5; }
+.stats { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin:16px 0; }
+.stat { background:var(--panel); border:1px solid var(--line); border-radius:18px; padding:12px; text-align:center; }
+.stat b { display:block; color:var(--green); font-size:20px; }
+.stat span { color:var(--muted); font-size:12px; }
+.section-title { display:flex; align-items:center; justify-content:space-between; margin:22px 0 12px; }
+.section-title h2 { margin:0; font-size:20px; }
+.section-title small { color:var(--green); }
+.muscle-card { background:var(--panel); border:1px solid var(--line); border-radius:28px; padding:14px; }
+.body-wrap { display:grid; grid-template-columns:1fr 1fr; gap:14px; align-items:center; }
+.body-map { position:relative; height:390px; border-radius:24px; background:linear-gradient(180deg,#101812,#060906); overflow:hidden; border:1px solid rgba(255,255,255,.06); }
+.body-svg { width:100%; height:100%; display:block; }
+.hotspot { cursor:pointer; transition:.2s; opacity:.78; }
+.hotspot:hover, .hotspot.active { opacity:1; filter: drop-shadow(0 0 10px var(--green)); }
+.muscle-info { display:flex; flex-direction:column; gap:10px; }
+.pill { border:1px solid var(--line); border-radius:16px; background:var(--panel2); padding:12px; }
+.pill h3 { margin:0 0 4px; color:var(--green); }
+.pill p { margin:0; color:var(--muted); font-size:13px; line-height:1.35; }
+.exercise-list { display:flex; flex-direction:column; gap:8px; }
+.exercise { background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); border-radius:14px; padding:10px; font-size:13px; }
+.cta { width:100%; border:0; border-radius:18px; background:var(--green); color:#061006; padding:14px; font-weight:900; margin-top:10px; }
+.cards { display:grid; gap:12px; }
+.card { background:var(--panel); border:1px solid var(--line); border-radius:22px; padding:16px; }
+.card b { color:var(--green); }
+.roadmap { display:flex; flex-direction:column; gap:10px; }
+.step { display:flex; align-items:center; gap:10px; background:var(--panel); border:1px solid var(--line); padding:12px; border-radius:18px; }
+.dot { width:24px; height:24px; border-radius:50%; background:var(--green); color:#061006; display:grid; place-items:center; font-weight:900; }
+.nav { position:fixed; bottom:12px; left:50%; transform:translateX(-50%); width:min(398px, calc(100vw - 24px)); background:rgba(13,18,15,.94); border:1px solid var(--line); border-radius:24px; padding:10px; display:grid; grid-template-columns:repeat(4,1fr); gap:8px; backdrop-filter: blur(16px); }
+.nav a { text-decoration:none; color:var(--muted); text-align:center; font-size:12px; padding:9px 4px; border-radius:16px; }
+.nav a.active { background:rgba(57,255,136,.14); color:var(--green); }
+@media (max-width:380px){ .body-wrap{grid-template-columns:1fr;} .body-map{height:330px;} }
