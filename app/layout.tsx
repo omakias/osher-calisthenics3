@@ -1,3 +1,16 @@
 import './globals.css';
-export const metadata = { title: 'Osher Calisthenics', description: 'Own Your Strength' };
-export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="he" dir="rtl"><body>{children}</body></html>}
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Osher Calisthenics',
+  description: 'אפליקציית קליסטניקס בעברית ללימוד, אימון ומעקב התקדמות',
+  manifest: '/manifest.webmanifest'
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="he" dir="rtl">
+      <body>{children}</body>
+    </html>
+  );
+}
